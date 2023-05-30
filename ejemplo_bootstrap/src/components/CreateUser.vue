@@ -146,7 +146,7 @@
           <b-form-input
             id="input-11"
             v-model="form.telefono"
-            type="number"
+            type="text"
             placeholder="Ingrese su telefono"
             required
           ></b-form-input>
@@ -160,7 +160,7 @@
   
   <script>
   import axios from 'axios';
-  
+
   export default {
     data() {
       return {
@@ -184,12 +184,45 @@
       onSubmit(event) {
         //event.preventDefault();
         event.preventDefault();
+        
+        const {
+        nickname,
+        password,
+        apellido,
+        nombre,
+        edad,
+        dni,
+        genero,
+        correo_electronico,
+        direccion,
+        foto,
+        telefono
+        } = this.form;
+
+      const userData = {
+        nickname,
+        password,
+        apellido,
+        nombre,
+        edad,
+        dni,
+        genero,
+        correo_electronico,
+        direccion,
+        foto,
+        telefono
+      };
+
+        
         var config_request={
           headers:{
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
           }
         }
+        //const{nickname, password,apellido,nombre,edad,dni,genero,correo_electronico,direccion,foto,telefono} =this.userData
+        
+        //insertar2(nickname,password,apellido,nombre,edad,dni,genero,correo_electronico,direccion,foto,telefono)
         axios.post('http://127.0.0.1:5050/usuario', this.form, config_request)
           .then(response => {
             // Manejar la respuesta exitosa

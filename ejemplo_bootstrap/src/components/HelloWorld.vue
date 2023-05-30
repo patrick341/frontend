@@ -11,6 +11,7 @@
       <p>Direccion: {{ user.direccion }}</p>
       <p>Dni: {{ user.dni }}</p>
       <p>Edad: {{ user.edad }}</p>
+      <p>Email: {{ user.correo_electronico }}</p>
     </div>
   </div>
 </template>
@@ -47,8 +48,8 @@ export default {
           telefono: user.telefono,
           id_usuario: user.id_usuario,
           vector_foto: user.vector_foto,
-          genero: user.genero
-
+          genero: user.genero,
+          email: user.correo_electronico
         }));
       }
       return [];

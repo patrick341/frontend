@@ -47,7 +47,7 @@
         };
   
         axios
-          .put(`http://127.0.0.1:5050/user/${this.selectedUser.id_usuario}`, this.selectedUser, config)
+          .patch('http://127.0.0.1:5050/user', this.selectedUser, config)
           .then(response => {
             console.log('Usuario actualizado:', response.data);
             this.selectedUser = null; // Limpiar el usuario seleccionado

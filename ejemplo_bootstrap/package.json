@@ -13,7 +13,8 @@
     "axios": "^1.4.0",
     "bootstrap-vue": "^2.23.1",
     "vue": "^2.7.14",
-    "vue-resource": "^1.5.3"
+    "vue-resource": "^1.5.3",
+    "vue-upload-component": "^2.8.23"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

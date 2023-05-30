@@ -1,14 +1,22 @@
 <template>
   <div id="app">
-    
-    <Componentes23/>
-    <CreateUser/>
-    <DeleteUser/>
-    <UpdateComponent/>
-    <!---<TablaComponent/>
+    <CreateUserComponenteFinal/>
+    <UltimoComponenteUpdate/>
+    <ComponenteEliminar/>
+    <UpdateFinalUsuario/>
+    <Create/>
+    <Update/>
+    <Delete/> 
+    <!---
+      <Componentes23/>
+      <CreateUser/>
+      <DeleteUser/>
+      <UpdateComponent/>
+      <TablaComponent/>
       <FrontComponent/>
       <ComponenteMaestro/>
       <HelloWorld/>
+      <CreateFinal/>
       <Tabla2Component/>-->
   </div>
 </template>
@@ -23,7 +31,14 @@ import CreateUser from './components/CreateUser.vue';
 import ComponenteMaestro from './components/ComponenteMaestro.vue';
 import DeleteUser from './components/deleteUser.vue';
 import UpdateComponent from './components/UpdateComponent.vue';
-
+import CreateUserComponenteFinal from './components/CreateUserComponenteFinal.vue';
+import CreateFinal from './components/CreateFinal.vue';
+import UpdateFinalUsuario from './components/UpdateFinalUsuario.vue';
+import UltimoComponenteUpdate from './components/UltimoComponenteUpdate.vue';
+import ComponenteEliminar from './components/ComponenteEliminar.vue';
+import Create from './components/Create.vue';
+import Update from './components/Update.vue';
+import Delete from './components/Delete.vue';
 
 export default {
   name: 'App',
@@ -36,7 +51,15 @@ export default {
     CreateUser,
     ComponenteMaestro,
     DeleteUser,
-    UpdateComponent
+    UpdateComponent,
+    CreateUserComponenteFinal,
+    CreateFinal,
+    UpdateFinalUsuario,
+    UltimoComponenteUpdate,
+    ComponenteEliminar,
+    Create,
+    Update,
+    Delete,
 }
 }
 </script>
